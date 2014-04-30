@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    
+    <input type="text" placeholder="Snack Name" id="name" />
+    <input type="text" placeholder="Snack Price" id="price" />
+    <button onclick="myApp.AddSnack()">Add Snack</button>
+    <select id="sort" onchange="myApp.WriteTable()">
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+    </select>
+    <select id="isDesc" onchange="myApp.WriteTable()">
+        <option value="false">Asc</option>
+        <option value="true">Desc</option>
+    </select>
+    <!--<button onclick="myApp.WriteTable()">Sort!</button>-->
+    <div id="snackList">
+
+    </div>
+    <script src="myJS.js"></script>
+</body>
+</html>
